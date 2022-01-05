@@ -3,7 +3,11 @@
 # from email.message import EmailMessage # Import the email modules
 # email = EmailMessage()
 # email['to'] = "Harshal Kotadiya"
+
 # email['from'] = 'Email'
+
+
+
 # email['subject'] = "Hello! I am new here. "
 #
 # email.set_content('You got me!')
@@ -14,12 +18,17 @@
 #     s.starttls()
 #     s.login('********************', '******')  # Turn on less secure account ON
 
+#
+
+
 *******************************************************************************
 import smtplib, ssl
 
 smtp_server = "smtp.gmail.com"
 port = 587  # For starttls
+<<<<<<< HEAD
 sender_email = "email id"
+
 password = input("Type your password and press enter: ")
 
 # Create a secure SSL context
@@ -37,4 +46,6 @@ except Exception as e:
     # Print any error messages to stdout
     print(e)
 finally:
+
     server.quit()
+
